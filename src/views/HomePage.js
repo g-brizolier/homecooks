@@ -14,7 +14,7 @@ import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import styles from "assets/jss/material-kit-react/views/components.js";
+import styles from "assets/jss/material-kit-react/views/HomePage.js";
 
 const useStyles = makeStyles(styles);
 

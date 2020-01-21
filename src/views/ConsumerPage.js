@@ -21,7 +21,7 @@ import Close from "@material-ui/icons/Close";
 import Zoom from '@material-ui/core/Zoom';
 import DialogActions from "@material-ui/core/DialogActions";
 
-import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import styles from "assets/jss/material-kit-react/views/consumerPage.js";
 import dishesData from 'assets/json/dishes.json'
 
 const Transition = React.forwardRef(function Transition(props, ref) {

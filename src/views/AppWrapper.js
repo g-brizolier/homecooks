@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import { Redirect, Route } from 'react-router-dom';
-import HomePage from "views/Components/HomePage.js";
+import HomePage from "views/HomePage.js";
 
 function isLoggedIn() {
     return localStorage.getItem("user") != null;

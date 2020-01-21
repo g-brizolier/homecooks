@@ -5,27 +5,21 @@ import { Router, Route, Switch } from "react-router-dom";
 
 import "assets/scss/material-kit-react.scss?v=1.8.0";
 
-// pages for this product
-import Components from "views/Components/Components.js";
-import LandingPage from "views/LandingPage/LandingPage.js";
-import ConsumerPage from "views/Components/ConsumerPage.js";
-import AppWrapper from "views/Components/AppWrapper";
-import ProducerPage from "views/Components/ProducerPage.js";
-import ProfilePage from "views/ProfilePage/ProfilePage.js";
-import LoginPage from "views/LoginPage/LoginPage.js";
+// pages for this app
+import ConsumerPage from "views/ConsumerPage.js";
+import AppWrapper from "views/AppWrapper";
+import ProducerPage from "views/ProducerPage.js";
+import LoginPage from "views/LoginPage.js";
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/landing-page" component={LandingPage} />
-      <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/producer" component={ProducerPage} />
-      <Route path="/consumer" component={ConsumerPage} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path="/components" component={Components} />
-      <Route path="/" component={AppWrapper} />
+      <Route path="/homecooks/producer" component={ProducerPage} />
+      <Route path="/homecooks/consumer" component={ConsumerPage} />
+      <Route path="/homecooks/login-page" component={LoginPage} />
+      <Route path="/homecooks/" component={AppWrapper} />
     </Switch>
   </Router>,
   document.getElementById("root")

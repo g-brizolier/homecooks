@@ -27,7 +27,6 @@ export default function HeaderLinks(props) {
         <Link to="consumer">
           <Button
             color="transparent"
-            // target="_blank"
             className={classes.navLink}
           >
             <Explore className={classes.icons} /> Browse
@@ -38,7 +37,6 @@ export default function HeaderLinks(props) {
         <Link to="producer">
           <Button
             color="transparent"
-            // target="_blank"
             className={classes.navLink}
           >
             <Apps className={classes.icons} /> My Dishes
