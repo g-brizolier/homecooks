@@ -158,7 +158,7 @@ export default function LoginPage(props) {
                         }
                         localStorage.setItem("user", JSON.stringify(user));
                         console.log(localStorage.getItem("user"));
-                        window.location.replace("/");
+                        window.location.replace("/homecooks/");
                       }}>
                         Get started
                       </Button>

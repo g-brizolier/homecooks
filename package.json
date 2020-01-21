@@ -3,7 +3,7 @@
   "version": "1.8.0",
   "description": "WebInt project by homecooks",
   "private": false,
-  "homepage":"http://chaoticdenim.github.io/homecooks",
+  "homepage": "http://chaoticdenim.github.io/homecooks",
   "main": "dist/index.js",
   "dependencies": {
     "@material-ui/core": "4.3.2",
