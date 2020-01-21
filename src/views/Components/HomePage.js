@@ -21,12 +21,6 @@ const useStyles = makeStyles(styles);
 export default function HomePage(props) {
   const classes = useStyles();
   const { ...rest } = props;
-  var isLoggedIn = false;
-  var bodyComponent = null;
-
-  if (isLoggedIn) {
-    bodyComponent = <Button>Moncul</Button>;
-  }
 
   return (
     <div>

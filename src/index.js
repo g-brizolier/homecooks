@@ -19,13 +19,13 @@ var hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/homecooks/landing-page" component={LandingPage} />
-      <Route path="/homecooks/profile-page" component={ProfilePage} />
-      <Route path="/homecooks/producer" component={ProducerPage} />
-      <Route path="/homecooks/consumer" component={ConsumerPage} />
-      <Route path="/homecooks/login-page" component={LoginPage} />
-      <Route path="/homecooks/components" component={Components} />
-      <Route path="/homecooks" component={AppWrapper} />
+      <Route path="/landing-page" component={LandingPage} />
+      <Route path="/profile-page" component={ProfilePage} />
+      <Route path="/producer" component={ProducerPage} />
+      <Route path="/consumer" component={ConsumerPage} />
+      <Route path="/login-page" component={LoginPage} />
+      <Route path="/components" component={Components} />
+      <Route path="/" component={AppWrapper} />
     </Switch>
   </Router>,
   document.getElementById("root")

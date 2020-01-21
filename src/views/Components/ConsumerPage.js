@@ -4,8 +4,6 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-// core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import Card from "components/Card/Card.js";
@@ -34,7 +32,7 @@ const useStyles = makeStyles(styles);
 
 function getDataInCategory(category) {
   let newArray = dishesData.filter(
-    el => el.type == category
+    el => el.type === category
   );
   console.log(newArray);
 
