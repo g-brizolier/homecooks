@@ -4,9 +4,19 @@ import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 
 const typographyStyle = {
   section: {
-    padding: "70px 0"
+    padding: "70px 0",
+    backgroundColor: "black",
+    height: "100vh"
   },
-  container,
+  container: {
+    ...container,
+    display: "flex",
+    color: "white",
+    marginTop:"5vh"
+  },
+  card: {
+    padding: "15px"
+  },
   space50: {
     height: "50px",
     display: "block"

@@ -58,13 +58,13 @@ export function ImageGrid(props) {
                     alt="..."
                     src={dishes[index].image}
                     className={navImageClasses}
-                    onClick={() => setClassicModal(true)}
+                    
                   />
                 <CardFooter style={{marginTop: "-10%"}}>
                   <GridContainer justify="center">
                     <GridItem xs={12}>
                       <h3>{dishes[index].name}</h3>
-                      <Button color="info">Buy {dishes[index].price/100}$</Button>
+                      <Button color="info"onClick={() => setClassicModal(true)}>Buy {dishes[index].price/100}$</Button>
                     </GridItem>
                   </GridContainer>
                 </CardFooter>
@@ -104,7 +104,7 @@ export function ImageGrid(props) {
                   </p>
                 </DialogContent>
                 <DialogActions className={classes.modalFooter}>
-                  <Button color="transparent" simple>
+                  <Button color="transparent" simple onClick={() => setClassicModal(false)}>
                     BUY
                   </Button>
                   <Button
@@ -175,7 +175,6 @@ export default function ConsumerPage(props) {
                   );
                 })}
               />
-              {/* </GridItem> */}
             </GridContainer>
           </div>
       </div>

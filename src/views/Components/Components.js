@@ -69,8 +69,8 @@ export default function Components(props) {
         <SectionTabs />
         <SectionPills />
         <SectionNotifications />
-        <SectionTypography />
-        <SectionJavascript />
+        {/* <SectionTypography /> */}
+        {/* <SectionJavascript />
         <SectionCarousel />
         <SectionCompletedExamples />
         <SectionLogin />
@@ -82,7 +82,7 @@ export default function Components(props) {
           </Link>
         </GridItem>
         <SectionExamples />
-        <SectionDownload />
+        <SectionDownload /> */}
       </div>
       <Footer />
     </div>
