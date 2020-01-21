@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "498c7ee817b8745c13298f05ce786f7d",
+    "revision": "0114bbb07a67e37c5f5d15a8f3550949",
     "url": "/homecooks/index.html"
   },
   {
-    "revision": "b3faca84fda28d16ab13",
+    "revision": "2ff03c640dce7f57ac33",
     "url": "/homecooks/static/css/main.da005ed0.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/homecooks/static/js/2.69f89c5e.chunk.js"
   },
   {
-    "revision": "b3faca84fda28d16ab13",
-    "url": "/homecooks/static/js/main.d58678c4.chunk.js"
+    "revision": "2ff03c640dce7f57ac33",
+    "url": "/homecooks/static/js/main.c3fd9469.chunk.js"
   },
   {
     "revision": "e98533de6c531865856d",
