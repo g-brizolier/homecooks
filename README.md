@@ -10,5 +10,5 @@ npm start
 
 ## Quick explanation
 - Reusable components have been created in `src/components` (They are from Material Kit React)
-- Everything in `src/views/Components` is the actual code of the app
+- Everything in `src/views/` is the code for each page of the app. As you will see, we make use of modern HTML5 features, such as local storage and file selection.
 - The "main" file exectued with **npm start** is `src/index.js`
