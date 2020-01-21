@@ -40,10 +40,14 @@ export default function LoginPage(props) {
   return (
     <div>
       <Header
-        absolute
         color="transparent"
-        brand="Material Kit React"
+        brand="Homecooks"
         rightLinks={<HeaderLinks />}
+        fixed
+        changeColorOnScroll={{
+          height: 200,
+          color: "white"
+        }}
         {...rest}
       />
       <div

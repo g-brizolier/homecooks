@@ -40,6 +40,14 @@ export default function ProducerPage(props) {
   const [tempQty, setTempQty] = React.useState(0);
   const [trigger, setTrigger] = React.useState(null);
   const { ...rest } = props;
+  const getBase64 = (file) => {
+    return new Promise((resolve,reject) => {
+       const reader = new FileReader();
+       reader.onload = () => resolve(reader.result);
+       reader.onerror = error => reject(error);
+       reader.readAsDataURL(file);
+    });
+  }
   return (
     <div>
       <Header
@@ -114,7 +122,7 @@ export default function ProducerPage(props) {
                           <input type="file" onChange={ (e) => {
                             var file = e.target.files[0];
                             if (file != null) {
-                              setSelected(URL.createObjectURL(e.target.files[0]))
+                              getBase64(e.target.files[0]).then(base64 => setSelected(base64));
                             }
                             }} />
                           <img id="output"  width="50%" src={selected}/>
@@ -170,6 +178,7 @@ export default function ProducerPage(props) {
                         <DialogActions className={classes.modalFooter}>
                           <Button color="transparent" simple onClick={() => {
                               setClassicModal(false);
+                              console.log(selected);
                               var newDishes = userDishes;
                               newDishes.images[trigger.row][trigger.col] = selected;
                               newDishes.names[trigger.row][trigger.col] = tempName;

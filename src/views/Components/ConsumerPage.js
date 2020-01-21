@@ -131,7 +131,6 @@ export default function ConsumerPage(props) {
 
   const classes = useStyles();
   const { ...rest } = props;
-
   const dishTypes = ["Main", "Soup", "Salad", "Dessert", "Snack"];
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   getDataInCategory("Main");
