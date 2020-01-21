@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/homecooks/precache-manifest.cb24bc160eab3f07821b23b72fcab2e6.js"
+  "/homecooks/precache-manifest.183bff589ce819a34bc7082c37d5c15e.js"
 );
 
 self.addEventListener('message', (event) => {
